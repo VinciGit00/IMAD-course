@@ -9,14 +9,6 @@ N = size(X, 1); % Number of training examples
 % You need to return the following variables correctly
 p = zeros(N, 1);
 
-% ====================== YOUR CODE HERE ======================
-% Instructions: Complete the following code to make predictions using
-%               your learned logistic regression parameters. 
-%               You should set p to a vector of 0's and 1's
-%
- %p = (1 + exp(-theta.'*X.')).^-1
-p = sigmoid(X*theta)>= 0.5
- % =========================================================================
-
+p = sigmoid(X*theta) >= 0.5;
 
 end
